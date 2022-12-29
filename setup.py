@@ -6,7 +6,7 @@ from io         import open
 setup(
     # ? Genel Bilgiler
     name         = "tcdd_bilet_kontrol",
-    version      = "0.1",
+    version      = "0.2",
     url          = "https://github.com/keyiflerolsun/tcdd_bilet_kontrol",
     description  = "TCDD Bilet Kontrol Etme Arayüzü",
     keywords     = ["tcdd_bilet_kontrol", "KekikAkademi", "keyiflerolsun"],
@@ -53,6 +53,6 @@ setup(
 
     # ? PyPI Bilgileri
     long_description_content_type = "text/markdown",
-    long_description              = "".join(open("PyPi.md", encoding="utf-8").readlines()),
+    long_description              = "".join(open("README.md", encoding="utf-8").readlines()),
     include_package_data          = True
 )

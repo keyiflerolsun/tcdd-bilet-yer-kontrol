@@ -2,7 +2,7 @@
 Name=TCDD | @KekikAkademi
 GenericName=TCDD | @KekikAkademi
 Comment=TCDD Bilet Kontrol Etme Arayüzü
-Version=0.1
+Version=0.2
 Keywords=tcdd_bilet_kontrol;KekikAkademi;keyiflerolsun
 Exec=tcdd_bilet_kontrol
 Icon=org.kekikakademi.tcdd_bilet_kontrol
