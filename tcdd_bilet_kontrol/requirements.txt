@@ -1,0 +1,10 @@
+pip
+setuptools
+wheel
+Kekik
+SelSik
+flet
+pandas
+regex
+tabulate
+notify-py
