@@ -6,7 +6,7 @@ from io         import open
 setup(
     # ? Genel Bilgiler
     name         = "tcdd_bilet_kontrol",
-    version      = "0.2",
+    version      = "0.1",
     url          = "https://github.com/keyiflerolsun/tcdd_bilet_kontrol",
     description  = "TCDD Bilet Kontrol Etme Arayüzü",
     keywords     = ["tcdd_bilet_kontrol", "KekikAkademi", "keyiflerolsun"],
