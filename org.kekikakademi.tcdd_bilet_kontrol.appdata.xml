@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2022 keyiflerolsun -->
-<component>
+<component type="desktop-application">
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
@@ -11,88 +11,12 @@
   <name>TCDD | @KekikAkademi</name>
   <summary>TCDD Bilet Kontrol Etme Arayüzü</summary>
   <url type="homepage">https://github.com/keyiflerolsun/tcdd_bilet_kontrol</url>
+  <url type="donation">https://keyiflerolsun.me/Kahve</url>
   <developer_name>keyiflerolsun</developer_name>
 
-
   <description>
-
-    <!-- * Markdown 2 HTML -->
-    <h1 id="-tcdd-bilet-kontrol">🚉 TCDD Bilet Kontrol</h1>
-    <p><img src="https://img.shields.io/github/repo-size/keyiflerolsun/tcdd_bilet_kontrol" alt="Repo Boyutu">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/keyiflerolsun/tcdd_bilet_kontrol&amp;title=Görüntülenme" alt="Görüntülenme">
-    <a href="https://KekikAkademi.org/Kahve" target="_blank"><img src="https://img.shields.io/badge/☕️-Kahve Ismarla-ffdd00" title="☕️ Kahve Ismarla" style="padding-left:5px;"></a></p>
-    <p><img src="https://img.shields.io/pypi/pyversions/tcdd-bilet-kontrol" alt="PyPI - Python Version">
-    <img src="https://img.shields.io/pypi/status/tcdd-bilet-kontrol" alt="PyPI - Status">
-    <img src="https://img.shields.io/pypi/v/tcdd-bilet-kontrol" alt="PyPI">
-    <img src="https://img.shields.io/pypi/dm/tcdd-bilet-kontrol" alt="PyPI - Downloads">
-    <img src="https://img.shields.io/pypi/wheel/tcdd-bilet-kontrol" alt="PyPI - Wheel">
-    <img src="https://img.shields.io/pypi/l/tcdd-bilet-kontrol" alt="PyPI - License"></p>
-    <p><em>TCDD Bilet Kontrol Etme Arayüzü</em></p>
-    <p><a href="https://www.python.org/"><img src="http://ForTheBadge.com/images/badges/made-with-python.svg" alt="ForTheBadge made-with-python"></a>
-    <a href="https://GitHub.com/keyiflerolsun/"><img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="ForTheBadge built-with-love"></a></p>
-    <h2 id="-do-rudan-kullan-m">🚀 Doğrudan Kullanım</h2>
-    <pre><code class="lang-bash">pip <span class="hljs-keyword">install </span>-U tcdd-<span class="hljs-keyword">bilet-kontrol
-    </span>
-    tcdd_bilet_kontrol
-    </code></pre>
-    <h2 id="-img-src-https-www-akashtrehan-com-assets-images-emoji-terminal-png-height-42-align-center-manuel-paketleme-se-enekleri"><img src="https://www.akashtrehan.com/assets/images/emoji/terminal.png" height="42" align="center"> Manuel Paketleme Seçenekleri</h2>
-    <h3 id="-python">🐍 Python</h3>
-    <pre><code class="lang-bash">git clone https:<span class="hljs-comment">//github.com/keyiflerolsun/tcdd_bilet_kontrol.git</span>
-    cd tcdd_bilet_kontrol
-
-    <span class="hljs-meta"># Paketle</span>
-    pip install .
-
-    <span class="hljs-meta"># Artıkları Temizle</span>
-    rm -rf build/ dist/ *.egg-info/ .eggs/ &amp;&amp; find . | grep -E <span class="hljs-string">"(__pycache__|\.pyc|\.pyo$)"</span> | xargs rm -rf
-
-    <span class="hljs-meta"># Çalıştır</span>
-    tcdd_bilet_kontrol
-
-    <span class="hljs-meta"># Paketi Kaldır</span>
-    pip uninstall tcdd_bilet_kontrol
-    </code></pre>
-    <h3 id="-flatpak">📦 Flatpak</h3>
-    <pre><code class="lang-bash">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/keyiflerolsun/tcdd_bilet_kontrol.git
-    cd tcdd_bilet_kontrol
-
-    <span class="hljs-comment"># Paketle</span>
-    flatpak-builder --<span class="hljs-keyword">user</span> <span class="hljs-title">--install</span> --force-clean build-dir org.kekikakademi.tcdd_bilet_kontrol.yml
-
-    <span class="hljs-comment"># Artıkları Temizle</span>
-    rm -rf .flatpak* .vscode build-dir &amp;&amp; find . | grep -E <span class="hljs-string">"(__pycache__|\.pyc|\.pyo$)"</span> | xargs rm -rf
-
-    <span class="hljs-comment"># Çalıştır</span>
-    flatpak run org.kekikakademi.tcdd_bilet_kontrol
-
-    <span class="hljs-comment"># Paketi Kaldır</span>
-    flatpak uninstall org.kekikakademi.tcdd_bilet_kontrol
-    </code></pre>
-    <h3 id="-bilinen-olumsuzluklar">⚠️ Bilinen Olumsuzluklar</h3>
-    <ul>
-    <li><strong>Flet</strong> varsayılan başlık ve ikonu henüz değişemiyor.<ul>
-    <li><blockquote>
-    <p><a href="https://github.com/flet-dev/flet/discussions/378">https://github.com/flet-dev/flet/discussions/378</a></p>
-    </blockquote>
-    </li>
-    </ul>
-    </li>
-    </ul>
-    <h2 id="-ba-yap">💸 Bağış Yap</h2>
-    <p><strong><a href="https://KekikAkademi.org/Kahve">☕️ Kahve Ismarla</a></strong></p>
-    <h2 id="-telif-hakk-ve-lisans">🌐 Telif Hakkı ve Lisans</h2>
-    <ul>
-    <li><em>Copyright (C) 2022 by</em> <a href="https://github.com/keyiflerolsun">keyiflerolsun</a> ❤️️</li>
-    <li><a href="https://github.com/keyiflerolsun/tcdd_bilet_kontrol/blob/master/LICENSE">GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</a> <em>Koşullarına göre lisanslanmıştır..</em></li>
-    </ul>
-    <h2 id="-i-leti-im">♻️ İletişim</h2>
-    <p><em>Benimle iletişime geçmek isterseniz, <strong>Telegram</strong>&#39;dan mesaj göndermekten çekinmeyin;</em> <a href="https://t.me/KekikKahve">@keyiflerolsun</a></p>
-    <p>##</p>
-    <blockquote>
-    <p><strong><a href="https://t.me/KekikAkademi">@KekikAkademi</a></strong> <em>için yazılmıştır..</em></p>
-    </blockquote>
-    <!-- ! Markdown 2 HTML -->
-
+    <p>TCDD Bilet Kontrol Etme Arayüzü</p>
+    <p>https://t.me/KekikAkademi için hazırlanmıştır..</p>
   </description>
 
 
@@ -102,9 +26,12 @@
     </screenshot>
   </screenshots>
 
+  <categories>
+      <category>Education</category>
+  </categories>
 
   <releases>
-    <release version="0.3" date="2022-12-30">
+    <release version="0.5" date="2022-12-30">
       <description>
         <p>
           FlatHub için hazırlık

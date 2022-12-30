@@ -20,15 +20,22 @@ finish-args:
   - --socket=pulseaudio
 
 modules:
+# - python3-numpy.json
+# - python3-requirements.json
+
 - name: tcdd_bilet_kontrol-yukleyici
   buildsystem: simple
   build-options:
     build-args:
-    - "--share=network"
+      - "--share=network"
   build-commands:
     - install -Dm644 org.kekikakademi.tcdd_bilet_kontrol.desktop /app/share/applications/org.kekikakademi.tcdd_bilet_kontrol.desktop
+    - install -Dm644 org.kekikakademi.tcdd_bilet_kontrol.appdata.xml /app/share/appdata/org.kekikakademi.tcdd_bilet_kontrol.appdata.xml
     - install -Dm644 tcdd_bilet_kontrol/Assets/Logo.png /app/share/icons/hicolor/scalable/apps/org.kekikakademi.tcdd_bilet_kontrol.png
     - python3 -m pip install . --prefix=${FLATPAK_DEST}
   sources:
-  - type: dir
-    path: "."
+    # - type: git
+    #   url: https://github.com/keyiflerolsun/tcdd_bilet_kontrol.git
+    #   commit: b32d0d0920afabb77086de3da6261a120c8bf8fc
+    - type: dir
+      path: "."
