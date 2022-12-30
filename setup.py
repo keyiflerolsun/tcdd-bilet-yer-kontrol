@@ -47,8 +47,9 @@ setup(
     # ? Masaüstü Paketi
     setup_requires = ["install_freedesktop"],
     data_files     = [
-        ("share/icons/hicolor/scalable/apps", ["tcdd_bilet_kontrol/Assets/Logo.png"]),
-        ("share/applications", ["org.kekikakademi.tcdd_bilet_kontrol.desktop"])
+        ("share/applications",                ["org.kekikakademi.tcdd_bilet_kontrol.desktop"]),
+        ("share/appdata",                     ["org.kekikakademi.tcdd_bilet_kontrol.appdata.xml"]),
+        ("share/icons/hicolor/scalable/apps", ["tcdd_bilet_kontrol/Assets/Logo.png"])
     ],
 
     # ? PyPI Bilgileri
